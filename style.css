@@ -15,6 +15,9 @@ body {
 }
 
 
+/* ---------------------- Navbar ----------------------*/
+
+
 
 .header {
     background-color: #1f2937;
@@ -39,6 +42,9 @@ body {
     text-decoration: none;
     color:white;
 }
+
+
+/* ---------------------- Hero Section ----------------------*/
 
 .hero-section {
     display:flex;
@@ -84,4 +90,33 @@ body {
 .hero-image img {
     max-width: 100%;
     height: auto;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-info, .second-info, 
+.third-info, .fourth-info {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap:10px;
+}
+
+.info-text {
+    font-size: 36px;
+    color:#1f2937;
+    font-weight: 300;
+    text-align:center;
+    margin-bottom: 24;
 }
