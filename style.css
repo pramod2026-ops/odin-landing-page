@@ -90,6 +90,7 @@ body {
 .hero-image img {
     max-width: 100%;
     height: auto;
+    min-width: 200px;
 }
 
 .first-info, .second-info, 
@@ -105,6 +106,7 @@ body {
     justify-content: center;
     align-content: center;
     gap:10px;
+    margin-bottom: 80px;
 }
 
 .info-text {
@@ -125,23 +127,29 @@ body {
 
 .cta {
     display:flex;
-    background-color:#3882F6;
+    background-color:white;
     color:white;
     justify-content: space-evenly;
+    padding: 60px;
 }
-
+.cta-container {
+    display: flex;
+    background-color: #3882F6;
+    padding:20px;
+}
 
 .cta-text {
     display: flex;
     flex-direction: column;
-    
-}
+    justify-content: space-between;
+
+    }
 
 .cta-btn {
     display:flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    
 }
 
 .cta-btn a {
