@@ -125,6 +125,11 @@ body {
     padding:40px;
 }
 
+.testimonials blockquote {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .cta {
     display:flex;
     background-color:white;
