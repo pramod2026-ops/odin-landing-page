@@ -4,99 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Odin landing page</title>
 </head>
 <body>
-    <!-- navbar section -->
 
-
+    <!-- ---------------------- Header / Navbar ---------------------- -->
     <header class="header">
-        
-<nav class="nav-bar">
-            
-          <a href="./index.html"> <img src="./assets/images/logo2.svg" alt="solution mindset logo " width="28">
+        <nav class="nav-bar">
+            <a href="./index.html">
+                <img src="./assets/images/logo.svg" alt="Solution Mindset logo" width="100">
             </a>
-    
-       
             <ul class="nav-lists">
                 <li><a href="#">Sign in</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#">Learn more</a></li>
             </ul>
         </nav>
+    </header>
 
-   <!-- hero section -->
-        
-
-  <section class="hero-section">
+    <!-- ---------------------- Hero Section ---------------------- -->
+    <section class="hero-section">
         <div class="hero-text">
             <h1>Build Better Digital Solutions</h1>
             <p>We help startups and small businesses create modern websites, improve their online presence, and turn ideas into real digital products that people love to use.</p>
-            <a href="#">Sign up</a>
+            <a href="#" class="btn">Sign up</a>
         </div>
-
         <div class="hero-image">
-             <img src="./assets/images/hero.svg" alt="hero image">
-         </div>
-        </section>
-       </header>  
+            <img src="./assets/images/hero.svg" alt="Illustration of a person building a website on a laptop">
+        </div>
+    </section>
 
     <!-- ---------------------- Main Section ---------------------- -->
-
-
     <main class="main-content">
-        <h2 class="info-text">What We Offer</h2>
-     <div class="info">
-        <div class="first-info">
-            <img src="./assets/images/illustration1.svg" alt="coming soon.." width="200">
-            <p>Custom website design focused on speed, accessibility, and clean user experience for growing businesses.</p>
-        </div>
 
-        <div class="second-info">
-            <img src="./assets/images/illustration2.svg" alt="coming soon.." width="200">
-            <p>Responsive layouts that work smoothly on mobile phones, tablets, and desktop devices.</p>
-        </div>
+        <!-- Info / offer section -->
+        <section class="info-section">
+            <h2 class="section-heading">What We Offer</h2>
+            <div class="info">
+                <div class="info-card">
+                    <img src="./assets/images/illustration1.svg" alt="Illustration of a custom website layout" width="200">
+                    <p>Custom website design focused on speed, accessibility, and clean user experience for growing businesses.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/images/illustration2.svg" alt="Illustration of a website displayed on multiple devices" width="200">
+                    <p>Responsive layouts that work smoothly on mobile phones, tablets, and desktop devices.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/images/illustration3.svg" alt="Illustration of a search engine results page" width="200">
+                    <p>SEO-friendly development to help your business appear in search results and reach more customers online.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/images/illustration4.svg" alt="Illustration of website maintenance and support" width="200">
+                    <p>Ongoing support and maintenance to keep your website secure, updated, and running reliably.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="third-info">
-            <img src="./assets/images/illustration.3.svg" alt="coming soon.." width="200">
-            <p>SEO-friendly development to help your business appear in search results and reach more customers online.</p>
-        </div>
+        <!-- Testimonial section -->
+        <section class="testimonials">
+            <figure>
+                <blockquote>
+                    <p>Working with SolutionMindTech completely changed our online presence. The team delivered a fast, modern website that helped us attract more customers within the first month.</p>
+                </blockquote>
+                <figcaption>&mdash; Jane Cooper, Founder of Bright Studio</figcaption>
+            </figure>
+        </section>
 
-        <div class="fourth-info">
-            <img src="./assets/images/illustration4.svg" alt="coming soon.." width="200">
-            <p>Ongoing support and maintenance to keep your website secure, updated, and running reliably.</p>
-        </div>
-        </div>
-
-                <!-- Testimonial section -->
-
-
-        <div class="testimonials">
-            <blockquote cite="">
-                <p>Working with Solution Mindset completely changed our online presence. The team delivered a fast, modern website that helped us attract more customers within the first month</p>
-    
-            </blockquote>
-        </div>
-
+        <!-- Call-to-action section -->
         <section class="cta">
             <div class="cta-container">
-            <div class="cta-text">
-                <h3>Start Your Next Project Today</h3>
-                <p>Join hundreds of businesses already improving their digital presence with our web solutions and creative support.</p>
+                <div class="cta-text">
+                    <h3>Start Your Next Project Today</h3>
+                    <p>Join hundreds of businesses already improving their digital presence with our web solutions and creative support.</p>
+                </div>
+                <div class="cta-btn">
+                    <a href="#" class="btn btn-outline">Sign Up</a>
+                </div>
             </div>
-
-            <div class="cta-btn">
-                <a href="signup">Sign Up</a>
-            </div>
-        </div>
         </section>
-   </main>
 
-   <footer class="footer">
-    <p>Copyright &copy; Solution Mindset 2026</p>
-   </footer>
+    </main>
+
+    <!-- ---------------------- Footer ---------------------- -->
+    <footer class="footer">
+        <p>Copyright &copy; SolutionMindTech 2026</p>
+    </footer>
+
 </body>
 </html>
