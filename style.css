@@ -1,240 +1,256 @@
 /* ---------------------- Variables ----------------------*/
 :root {
-    --color-dark: #1f2937;
-    --color-blue: #3882F6;
-    --color-gray: #E5E7EB;
-    --color-light: #F9FAF8;
+  --color-dark: #1f2937;
+  --color-blue: #3882f6;
+  --color-gray: #e5e7eb;
+  --color-light: #f9faf8;
 
-    --section-padding-x: 120px;
+  --section-padding-x: 120px;
 }
 
 /* ---------------------- Reset ----------------------*/
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 a {
-    transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid var(--color-blue);
-    outline-offset: 2px;
+  outline: 3px solid var(--color-blue);
+  outline-offset: 2px;
 }
 
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  font-size: 22px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.logo-pg {
+  color: var(--color-blue);
+  margin-left: 2px;
+}
+
+.logo-studio {
+  color: var(--color-light);
+}
 /* ---------------------- Buttons (shared) ----------------------*/
 .btn {
-    display: inline-block;
-    background-color: var(--color-blue);
-    color: white;
-    text-decoration: none;
-    padding: 10px 32px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 12px;
+  display: inline-block;
+  background-color: var(--color-blue);
+  color: white;
+  text-decoration: none;
+  padding: 10px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 12px;
 }
 .btn:hover {
-    opacity: 0.85;
-    cursor: pointer;
+  opacity: 0.85;
+  cursor: pointer;
 }
 .btn-outline {
-    background-color: transparent;
-    color: var(--color-gray);
-    border: 2px solid white;
-    padding: 4px 18px;
-    margin-top: 0;
+  background-color: transparent;
+  color: var(--color-gray);
+  border: 2px solid white;
+  padding: 4px 18px;
+  margin-top: 0;
 }
-
 
 /* ---------------------- Navbar ----------------------*/
 
 .header {
-    background-color: var(--color-dark);
+  background-color: var(--color-dark);
 }
-
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px var(--section-padding-x);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px var(--section-padding-x);
 }
 .nav-lists {
-    display: flex;
-    list-style-type: none;
-    gap: 22px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
 }
 .nav-bar a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 .nav-bar a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* ---------------------- Hero Section ----------------------*/
 .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px var(--section-padding-x);
-    gap: 40px;
-    background-color: var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px var(--section-padding-x);
+  gap: 40px;
+  background-color: var(--color-dark);
 }
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 500px;
 }
 .hero-text h1 {
-    font-size: 48px;
-    color: var(--color-light);
-    font-weight: 900;
-    margin-bottom: 8px;
-    letter-spacing: -2px;
+  font-size: 48px;
+  color: var(--color-light);
+  font-weight: 900;
+  margin-bottom: 8px;
+  letter-spacing: -2px;
 }
 .hero-text p {
-    font-size: 18px;
-    color: var(--color-gray);
-    line-height: 1.5;
+  font-size: 18px;
+  color: var(--color-gray);
+  line-height: 1.5;
 }
 .hero-image img {
-    max-width: 100%;
-    height: auto;
-    min-width: 200px;
+  max-width: 100%;
+  height: auto;
+  min-width: 200px;
 }
 
 /* ---------------------- Info Section ----------------------*/
 .section-heading {
-    font-size: 36px;
-    color: var(--color-dark);
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 36px;
+  color: var(--color-dark);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 80px;
 }
 .info-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 200px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  text-align: center;
 }
 
 /* ---------------------- Testimonial Section ----------------------*/
 .testimonials {
-    background-color: var(--color-gray);
-    color: var(--color-dark);
-    font-weight: 300;
-    padding: 40px;
-    text-align: center;
+  background-color: var(--color-gray);
+  color: var(--color-dark);
+  font-weight: 300;
+  padding: 40px;
+  text-align: center;
 }
 .testimonials figure {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .testimonials blockquote {
-    margin: 0;
-    font-size: 28px;
+  margin: 0;
+  font-size: 28px;
 }
 .testimonials figcaption {
-    margin-top: 16px;
-    font-size: 16px;
-    font-weight: bold;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* ---------------------- CTA Section ----------------------*/
 .cta {
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    padding: 60px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding: 60px;
 }
 .cta-container {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-blue);
-    color: white;
-    padding: 40px;
-    gap: 40px;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-blue);
+  color: white;
+  padding: 40px;
+  gap: 40px;
+  border-radius: 8px;
 }
 .cta-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .cta-text p {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 .cta-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 /* ---------------------- Footer ----------------------*/
 .footer {
-    background-color: var(--color-dark);
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+  background-color: var(--color-dark);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
 }
 
 /* ---------------------- Responsive ----------------------*/
 @media (max-width: 900px) {
-    :root {
-        --section-padding-x: 40px;
-    }
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-text {
-        align-items: center;
-        max-width: 100%;
-    }
-    .cta-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  :root {
+    --section-padding-x: 40px;
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text {
+    align-items: center;
+    max-width: 100%;
+  }
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-    :root {
-        --section-padding-x: 20px;
-    }
-    .nav-lists {
-        gap: 12px;
-        font-size: 14px;
-    }
-    .hero-text h1 {
-        font-size: 32px;
-    }
-    .testimonials blockquote {
-        font-size: 22px;
-    }
+  :root {
+    --section-padding-x: 20px;
+  }
+  .nav-lists {
+    gap: 12px;
+    font-size: 14px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .testimonials blockquote {
+    font-size: 22px;
+  }
 }
