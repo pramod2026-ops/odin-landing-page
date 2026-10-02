@@ -10,129 +10,143 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>PG Studio</title>
+    <title>PG Studio | Websites for growing businesses</title>
+    <meta
+      name="description"
+      content="PG Studio plans and builds clear, responsive websites for small businesses and independent professionals."
+    />
+    <meta name="theme-color" content="#101b2d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PG Studio | Websites for growing businesses" />
+    <meta
+      property="og:description"
+      content="A thoughtful, practical web presence for your next stage of growth."
+    />
   </head>
   <body>
     <!-- ---------------------- Header / Navbar ---------------------- -->
-    <header class="header">
-      <nav class="nav-bar">
-        <a href="./index.html" class="logo">
-          <span class="logo-pg">PG</span><span class="logo-studio">Studio</span>
+    <header class="site-header">
+      <nav class="nav-bar container" aria-label="Main navigation">
+        <a href="./index.html" class="logo" aria-label="PG Studio home">
+          <span class="logo-pg">PG</span><span>Studio</span>
         </a>
         <ul class="nav-lists">
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Learn more</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- ---------------------- Hero Section ---------------------- -->
-    <section class="hero-section">
-      <div class="hero-text">
-        <h1>Your Business, Built for the Digital Age</h1>
-        <p>
-          PG Studio designs and builds fast, modern websites that help growing
-          businesses look credible, attract customers, and scale online —
-          without the agency price tag.
-        </p>
-        <a href="#" class="btn">Sign up</a>
-      </div>
-      <div class="hero-image">
-        <img
-          src="./assets/images/hero2.svg"
-          alt="Illustration of a person building a website on a laptop"
-        />
-      </div>
-    </section>
-
-    <!-- ---------------------- Main Section ---------------------- -->
-    <main class="main-content">
-      <!-- Info / offer section -->
-      <section class="info-section">
-        <h2 class="section-heading">What We Offer</h2>
-        <div class="info">
-          <div class="info-card">
-            <img
-              src="./assets/images/illus1.svg"
-              alt="Illustration of a custom website layout"
-              width="200"
-            />
-            <p>
-              <strong>Custom Web Design</strong><br />Websites built around your
-              brand and your customers, not a generic template.
+    <main>
+      <section class="hero-section">
+        <div class="hero-inner container">
+          <div class="hero-text">
+            <p class="eyebrow">A small web studio for growing businesses</p>
+            <h1>A clear, confident website for your next chapter.</h1>
+            <p class="hero-copy">
+              PG Studio helps small businesses and independent professionals
+              turn what they do into a useful, welcoming online presence.
             </p>
+            <div class="hero-actions">
+              <a href="./contact.html" class="btn">Tell me about your project</a>
+              <a href="#services" class="text-link">Explore services <span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="hero-note">Thoughtful design. Practical builds. A process you can follow.</p>
           </div>
-          <div class="info-card">
+          <div class="hero-image">
             <img
-              src="./assets/images/illustration2.svg"
-              alt="Illustration of a website displayed on multiple devices"
-              width="200"
+              src="./assets/images/hero2.svg"
+              alt="A person planning a website on a laptop"
+              width="560"
+              height="420"
+              fetchpriority="high"
             />
-            <p>
-              <strong>Responsive by Default</strong><br />Every site we build
-              works perfectly on phones, tablets, and desktops from day one.
-            </p>
-          </div>
-          <div class="info-card">
-            <img
-              src="./assets/images/illustration3.svg"
-              alt="Illustration of a search engine results page"
-              width="200"
-            />
-            <p>
-              <strong>Built to Be Found</strong><br />SEO fundamentals baked
-              into every project, so search engines can actually find you.
-            </p>
-          </div>
-          <div class="info-card">
-            <img
-              src="./assets/images/illus4.svg"
-              alt="Illustration of website maintenance and support"
-              width="200"
-            />
-            <p>
-              <strong>Ongoing Support</strong><br />We don't disappear after
-              launch. Updates, fixes, and monitoring included.
-            </p>
           </div>
         </div>
       </section>
 
-      <!-- Testimonial section -->
-      <section class="testimonials">
-        <figure>
-          <blockquote>
-            <p>
-              PG Studio took our outdated site and turned it into something
-              we're actually proud to send to clients. Inquiries doubled in the
-              first two months.
-            </p>
-          </blockquote>
-          <figcaption>&mdash; Jane Cooper, Founder of Bright Studio</figcaption>
-        </figure>
+      <section class="intro-section section-space" aria-labelledby="intro-title">
+        <div class="container intro-grid">
+          <p class="eyebrow">Good websites make the next step easy</p>
+          <div>
+            <h2 id="intro-title">Your website should explain what you do—and help the right people get in touch.</h2>
+            <p>Whether you are starting from scratch or ready for a refresh, we can shape a site around your goals, your customers, and the way you actually work.</p>
+          </div>
+        </div>
       </section>
 
-      <!-- Call-to-action section -->
-      <section class="cta">
-        <div class="cta-container">
-          <div class="cta-text">
-            <h3>Ready to Build Something Better?</h3>
-            <p>
-              Get a modern website that works as hard as you do. No long
-              contracts, no jargon — just results.
-            </p>
+      <section class="services-section section-space" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading-wrap">
+            <p class="eyebrow">Ways we can work together</p>
+            <h2 id="services-title">Simple, considered web services</h2>
+            <p>Start with the help you need now. We will agree on the scope before work begins.</p>
           </div>
-          <div class="cta-btn">
-            <a href="#" class="btn btn-outline">Sign Up</a>
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="card-number">01</span>
+              <h3>Website design</h3>
+              <p>A clear visual direction and page layouts shaped around your brand, content, and customers.</p>
+            </article>
+            <article class="service-card">
+              <span class="card-number">02</span>
+              <h3>Website development</h3>
+              <p>A responsive, accessible website built to load quickly and work across common screen sizes.</p>
+            </article>
+            <article class="service-card">
+              <span class="card-number">03</span>
+              <h3>Content and structure</h3>
+              <p>Help organizing your pages and writing clear copy so visitors can understand your offer.</p>
+            </article>
+            <article class="service-card">
+              <span class="card-number">04</span>
+              <h3>Care and improvements</h3>
+              <p>Follow-up updates and practical improvements as your business and website needs change.</p>
+            </article>
           </div>
+        </div>
+      </section>
+
+      <section class="process-section section-space" id="process" aria-labelledby="process-title">
+        <div class="container process-layout">
+          <div class="process-intro">
+            <p class="eyebrow">A straightforward process</p>
+            <h2 id="process-title">From first conversation to launch</h2>
+            <p>You will know what we are working on, what I need from you, and what happens next.</p>
+            <a href="./contact.html" class="text-link">Start a conversation <span aria-hidden="true">→</span></a>
+          </div>
+          <ol class="process-list">
+            <li><span>01</span><div><h3>Talk through your goals</h3><p>We discuss your business, audience, needs, and budget to see if the project is a fit.</p></div></li>
+            <li><span>02</span><div><h3>Agree on a plan</h3><p>You receive a clear scope, timeline, and price before any design or development starts.</p></div></li>
+            <li><span>03</span><div><h3>Design and build</h3><p>We shape the content and design, then build and review the site together.</p></div></li>
+            <li><span>04</span><div><h3>Launch with confidence</h3><p>After final checks and your approval, your new website is ready to share.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-container">
+          <div>
+            <p class="eyebrow">Have a project in mind?</p>
+            <h2>Let’s make your next website feel like you.</h2>
+            <p>Share a little about your business and what you need. We can take it from there.</p>
+          </div>
+          <a href="./contact.html" class="btn btn-light">Get in touch <span aria-hidden="true">→</span></a>
         </div>
       </section>
     </main>
 
-    <!-- ---------------------- Footer ---------------------- -->
-    <footer class="footer">
-      <p>Copyright &copy; PG Studio 2026</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="./index.html" class="logo" aria-label="PG Studio home"><span class="logo-pg">PG</span><span>Studio</span></a>
+        <p>Independent web design and development for small businesses.</p>
+        <a href="./contact.html">Start a project <span aria-hidden="true">→</span></a>
+        <small>© <span id="year">2026</span> PG Studio</small>
+      </div>
     </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

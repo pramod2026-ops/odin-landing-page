@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tell PG Studio about your website project. Share your goals, timeline, and the kind of help you need." />
+    <meta name="theme-color" content="#101b2d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact PG Studio | Start a website project</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar container" aria-label="Main navigation">
+        <a href="./index.html" class="logo" aria-label="PG Studio home"><span class="logo-pg">PG</span><span>Studio</span></a>
+        <ul class="nav-lists">
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./index.html#process">How it works</a></li>
+          <li><a href="./contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <div class="container contact-layout">
+        <section class="contact-intro" aria-labelledby="contact-title">
+          <p class="eyebrow">Start a conversation</p>
+          <h1 id="contact-title">Tell me a little about your project.</h1>
+          <p>Share where your business is today and what you want your website to do. I’ll review your note and follow up to discuss scope, timing, and next steps.</p>
+          <ul class="contact-points">
+            <li><span aria-hidden="true">✓</span> No pressure to have every detail figured out</li>
+            <li><span aria-hidden="true">✓</span> A clear scope and price before work begins</li>
+            <li><span aria-hidden="true">✓</span> Friendly, straightforward communication</li>
+          </ul>
+        </section>
+
+        <form class="contact-form" id="project-form">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Your email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-field form-field-full">
+              <label for="business">Business or project name <span>(optional)</span></label>
+              <input id="business" name="business" autocomplete="organization" />
+            </div>
+            <div class="form-field form-field-full">
+              <label for="service">What kind of help are you looking for?</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>Website design</option>
+                <option>Website development</option>
+                <option>Content and site structure</option>
+                <option>Website updates or improvements</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="message">A few details about your project</label>
+              <textarea id="message" name="message" placeholder="What does your business do? What would you like your website to help with?" required></textarea>
+            </div>
+            <div class="form-field form-field-full">
+              <button class="btn" type="submit">Prepare project inquiry <span aria-hidden="true">→</span></button>
+              <p class="form-help">This opens your email app with your project details ready to send.</p>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="./index.html" class="logo" aria-label="PG Studio home"><span class="logo-pg">PG</span><span>Studio</span></a>
+        <p>Independent web design and development for small businesses.</p>
+        <a href="./index.html#services">Explore services <span aria-hidden="true">→</span></a>
+        <small>© <span id="year">2026</span> PG Studio</small>
+      </div>
+    </footer>
+    <script>
+      const projectInbox = "pramodcodes.2026@gmail.com";
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.getElementById("project-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const status = document.getElementById("form-status");
+        if (!form.reportValidity()) return;
+        const data = new FormData(form);
+        const subject = `Website project inquiry from ${data.get("name")}`;
+        const message = [
+          `Name: ${data.get("name")}`,
+          `Email: ${data.get("email")}`,
+          `Business / project: ${data.get("business") || "Not provided"}`,
+          `Service: ${data.get("service")}`,
+          "",
+          data.get("message"),
+        ].join("\n");
+        window.location.href = `mailto:${projectInbox}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        status.textContent = "Your email app should open with the inquiry details. Review them and send when ready.";
+      });
+    </script>
+  </body>
+</html>
